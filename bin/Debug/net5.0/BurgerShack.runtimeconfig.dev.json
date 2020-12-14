@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\brist\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\brist\\.nuget\\packages"
+    ]
+  }
+}
