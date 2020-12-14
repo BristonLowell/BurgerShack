@@ -34,20 +34,20 @@ namespace BurgerShack.Controllers
       }
     }
 
-    // [HttpPost]
+    [HttpPost]
 
-    // public ActionResult<Burger> Create([FromBody] Burger newBurger)
-    // {
-    //   try
-    //   {
-    //     return Ok(_bs.Create(newBurger));
-    //   }
-    //   catch (System.Exception err)
-    //   {
+    public ActionResult<Burger> Create([FromBody] Burger newBurger)
+    {
+      try
+      {
+        return Ok(_bs.Create(newBurger));
+      }
+      catch (System.Exception err)
+      {
 
-    //     return BadRequest(err);
-    //   }
-    // }
+        return BadRequest(err);
+      }
+    }
 
     // [HttpDelete("{index}")]
 

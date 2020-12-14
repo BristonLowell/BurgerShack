@@ -19,10 +19,10 @@ namespace BurgerShack.Services
       return _br.GetAll();
     }
 
-    // public Burger Create(Burger newBurger)
-    // {
-    //   // return newBurger;
-    // }
+    public Burger Create(Burger newBurger)
+    {
+      return _br.Create(newBurger);
+    }
 
     // public string Delete(int index)
     // {
