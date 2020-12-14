@@ -34,6 +34,22 @@ namespace BurgerShack.Controllers
       }
     }
 
+    [HttpGet("{id}")]
+
+    public ActionResult<Burger> GetById(int id)
+    {
+      try
+      {
+        return Ok(_bs.GetById(id));
+      }
+      catch (System.Exception err)
+      {
+
+        return BadRequest(err);
+      }
+    }
+
+
     [HttpPost]
 
     public ActionResult<Burger> Create([FromBody] Burger newBurger)
@@ -49,35 +65,35 @@ namespace BurgerShack.Controllers
       }
     }
 
-    // [HttpDelete("{index}")]
+    [HttpDelete("{id}")]
 
-    // public ActionResult<string> Delete(int index)
-    // {
-    //   try
-    //   {
-    //     return Ok(_bs.Delete(index));
-    //   }
-    //   catch (System.Exception err)
-    //   {
+    public ActionResult<string> Delete(int id)
+    {
+      try
+      {
+        return Ok(_bs.Delete(id));
+      }
+      catch (System.Exception err)
+      {
 
-    //     return BadRequest(err);
-    //   }
-    // }
+        return BadRequest(err);
+      }
+    }
 
-    // [HttpPut("{index}")]
+    [HttpPut("{id}")]
 
-    // public ActionResult<Burger> Edit(int index, [FromBody] Burger editedBurger)
-    // {
-    //   try
-    //   {
-    //     return Ok(_bs.Edit(index, editedBurger));
-    //   }
-    //   catch (System.Exception err)
-    //   {
+    public ActionResult<Burger> Edit(int id, [FromBody] Burger editedBurger)
+    {
+      try
+      {
+        return Ok(_bs.Edit(id, editedBurger));
+      }
+      catch (System.Exception err)
+      {
 
-    //     return BadRequest(err);
-    //   }
-    // }
+        return BadRequest(err);
+      }
+    }
 
 
   }
