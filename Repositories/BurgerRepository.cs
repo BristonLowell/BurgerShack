@@ -49,7 +49,7 @@ namespace BurgerShack.Repositories
     // let sql = 'INSERT INTO leaderboard(username, data) VALUES(?, ?)';
     {
       string sql = @"UPDATE burgers SET name = @Name, meat = @Meat, buns = @Buns, sauce = @sauce WHERE id = @Id;
-      SELECT LAST_UPDATE_ID();";
+      SELECT * FROM burger WHERE id = @Id";
       editedBurger.Id = _db.ExecuteScalar<int>(sql, editedBurger);
       return editedBurger;
 
