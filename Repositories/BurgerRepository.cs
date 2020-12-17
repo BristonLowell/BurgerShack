@@ -46,20 +46,10 @@ namespace BurgerShack.Repositories
     }
 
     public Burger Edit(int id, Burger editedBurger)
-    // let sql = 'INSERT INTO leaderboard(username, data) VALUES(?, ?)';
     {
       string sql = @"UPDATE burgers SET name = @Name, meat = @Meat, buns = @Buns, sauce = @sauce WHERE id = @Id;
       SELECT * FROM burger WHERE id = @Id";
-      editedBurger.Id = _db.ExecuteScalar<int>(sql, editedBurger);
-      return editedBurger;
-
+      return _db.QueryFirstOrDefault<Burger>(sql, new { id });
     }
-
-    //  public bool Delete(int id)
-    //     {
-    //         string sql = "DELETE FROM burgers WHERE id = @Id LIMIT 1";
-    //         int affectedRows = _db.Execute(sql, new { id });
-    //         return affectedRows > 0;
-    //     }
   }
 }

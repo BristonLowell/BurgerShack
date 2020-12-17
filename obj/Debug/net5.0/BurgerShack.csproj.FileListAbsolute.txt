@@ -37,3 +37,5 @@ C:\source\codeworks\BurgerShack\obj\Debug\net5.0\BurgerShack.dll
 C:\source\codeworks\BurgerShack\obj\Debug\net5.0\ref\BurgerShack.dll
 C:\source\codeworks\BurgerShack\obj\Debug\net5.0\BurgerShack.pdb
 C:\source\codeworks\BurgerShack\obj\Debug\net5.0\BurgerShack.genruntimeconfig.cache
+C:\source\codeworks\BurgerShack\bin\Debug\net5.0\wwwsrc\package-lock.json
+C:\source\codeworks\BurgerShack\bin\Debug\net5.0\wwwsrc\package.json
