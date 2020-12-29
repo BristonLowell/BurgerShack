@@ -48,21 +48,17 @@ namespace BurgerShack.Services
 
       //NOTE looping through an object and compares
 
-      if (editedListing.Name != null)
+      if (editedListing.Title != null)
       {
-        oldListing.Name = editedListing.Name;
+        oldListing.Title = editedListing.Title;
       }
-      if (editedListing.Meat != null)
+      if (editedListing.Description != null)
       {
-        oldListing.Meat = editedListing.Meat;
+        oldListing.Description = editedListing.Description;
       }
-      if (editedListing.Buns != null)
+      if (editedListing.Img != null)
       {
-        oldListing.Buns = editedListing.Buns;
-      }
-      if (editedListing.Sauce != null)
-      {
-        oldListing.Sauce = editedListing.Sauce;
+        oldListing.Img = editedListing.Img;
       }
 
       // foreach (PropertyInfo prop in oldListing.GetType().GetProperties())
