@@ -653,19 +653,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\brist\\.nuget\\packages\\": {}
+    "C:\\Users\\miste\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\source\\codeworks\\BurgerShack\\BurgerShack.csproj",
+      "projectUniqueName": "C:\\source\\codeworks\\BurgerShack\\BurgerShack.csproj",
       "projectName": "BurgerShack",
-      "projectPath": "c:\\source\\codeworks\\BurgerShack\\BurgerShack.csproj",
-      "packagesPath": "C:\\Users\\brist\\.nuget\\packages\\",
-      "outputPath": "c:\\source\\codeworks\\BurgerShack\\obj\\",
+      "projectPath": "C:\\source\\codeworks\\BurgerShack\\BurgerShack.csproj",
+      "packagesPath": "C:\\Users\\miste\\.nuget\\packages\\",
+      "outputPath": "C:\\source\\codeworks\\BurgerShack\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\brist\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\miste\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -734,7 +734,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
